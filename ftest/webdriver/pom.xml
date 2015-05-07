@@ -2,15 +2,15 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.nuxeo.marketplace.social.publishing</groupId>
+    <groupId>org.nuxeo.marketplace.media.publishing</groupId>
     <artifactId>parent</artifactId>
     <version>1.0-SNAPSHOT</version>
     <relativePath>../../pom.xml</relativePath>
   </parent>
 
   <artifactId>webdriver</artifactId>
-  <name>Nuxeo Social Publishing functional tests with WebDriver</name>
-  <description>Nuxeo Social Publishing tests with WebDriver</description>
+  <name>Nuxeo Media Publishing functional tests with WebDriver</name>
+  <description>Nuxeo Media Publishing tests with WebDriver</description>
 
   <properties>
     <some.password>setTheValueInYourSettings</some.password>

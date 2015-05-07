@@ -6,10 +6,10 @@
     <version>7.3-SNAPSHOT</version>
   </parent>
 
-  <groupId>org.nuxeo.marketplace.social.publishing</groupId>
+  <groupId>org.nuxeo.marketplace.media.publishing</groupId>
   <artifactId>parent</artifactId>
   <packaging>pom</packaging>
-  <name>Nuxeo Social Publishing Marketplace package</name>
+  <name>Nuxeo Media Publishing Marketplace package</name>
   <version>1.0-SNAPSHOT</version>
 
   <properties>
@@ -25,28 +25,28 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>org.nuxeo.marketplace.social.publishing</groupId>
-        <artifactId>marketplace-social-publishing</artifactId>
+        <groupId>org.nuxeo.marketplace.media.publishing</groupId>
+        <artifactId>marketplace-media-publishing</artifactId>
         <version>${nuxeo.distribution.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.nuxeo.ecm.social</groupId>
-        <artifactId>nuxeo-social-publishing-core</artifactId>
+        <groupId>org.nuxeo.ecm.media.publishing</groupId>
+        <artifactId>nuxeo-media-publishing-core</artifactId>
         <version>${nuxeo.distribution.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.nuxeo.ecm.social</groupId>
-        <artifactId>nuxeo-social-publishing-web</artifactId>
+        <groupId>org.nuxeo.ecm.media.publishing</groupId>
+        <artifactId>nuxeo-media-publishing-web</artifactId>
         <version>${nuxeo.distribution.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.nuxeo.ecm.social</groupId>
-        <artifactId>nuxeo-social-publishing-wistia</artifactId>
+        <groupId>org.nuxeo.ecm.media.publishing</groupId>
+        <artifactId>nuxeo-media-publishing-wistia</artifactId>
         <version>${nuxeo.distribution.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.nuxeo.ecm.social</groupId>
-        <artifactId>nuxeo-social-publishing-youtube</artifactId>
+        <groupId>org.nuxeo.ecm.media.publishing</groupId>
+        <artifactId>nuxeo-media-publishing-youtube</artifactId>
         <version>${nuxeo.distribution.version}</version>
       </dependency>
     </dependencies>
@@ -77,9 +77,9 @@
   </repositories>
 
   <scm>
-    <connection>scm:git:git://github.com/nuxeo/marketplace-social-publishing.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com:nuxeo/marketplace-social-publishing.git</developerConnection>
-    <url>https://github.com/nuxeo/marketplace-social-publishing</url>
+    <connection>scm:git:git://github.com/nuxeo/marketplace-media-publishing.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:nuxeo/marketplace-media-publishing.git</developerConnection>
+    <url>https://github.com/nuxeo/marketplace-media-publishing</url>
   </scm>
 
 </project>

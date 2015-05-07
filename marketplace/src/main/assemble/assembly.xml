@@ -7,14 +7,14 @@
            uri="urn:nuxeo-artifact" />
   <taskdef resource="net/sf/antcontrib/antlib.xml" />
 
-  <target name="build" description="Build Nuxeo Social Publishing Marketplace package">
+  <target name="build" description="Build Nuxeo Media Publishing Marketplace package">
     <property name="outdir" value="${maven.project.build.directory}" />
     <!-- Include your artifacts in the graph adding your groupId to groupPrefixes -->
     <artifact:nuxeo-expand includeTestScope="true"
                            groupPrefixes="org.nuxeo,com.nuxeo" />
     <!-- For Nuxeo IDE being able to use that distribution as a SDK -->
-    <artifact:print output="${outdir}/artifacts-social-publishing.properties" mode="sdk" />
-    <artifact:print output="${outdir}/test-artifacts-social-publishing.properties"
+    <artifact:print output="${outdir}/artifacts-media-publishing.properties" mode="sdk" />
+    <artifact:print output="${outdir}/test-artifacts-media-publishing.properties"
                     mode="sdk"
                     scopes="test" />
     <!-- Prints the graph for debugging purpose -->
@@ -32,9 +32,9 @@
         <filter token="DISTRIB_VERSION" value="${nuxeo.distribution.version}" />
       </filterset>
     </copy>
-    <copy file="${outdir}/artifacts-social-publishing.properties"
+    <copy file="${outdir}/artifacts-media-publishing.properties"
           todir="${outdir}/marketplace/install" />
-    <copy file="${outdir}/test-artifacts-social-publishing.properties"
+    <copy file="${outdir}/test-artifacts-media-publishing.properties"
           todir="${outdir}/marketplace/install" />
 
     <!-- Base distribution NXR -->
@@ -82,13 +82,13 @@
                 file2="${outdir}/nuxeo-distribution-cap-${nuxeo.distribution.version}.zip"
                 includesfile="${outdir}/includes"
                 excludesfile="${outdir}/excludesfile"
-                patternsetid="social-publishing.versus.cap"
+                patternsetid="media-publishing.versus.cap"
                 ignoreContent="false"
                 ignoreContentPattern=".*\.jar$">
     </nx:zipdiff>
     <unzip src="${outdir}/nxr-${maven.project.version}.zip"
            dest="${outdir}/marketplace/install">
-      <patternset refid="social-publishing.versus.cap" />
+      <patternset refid="media-publishing.versus.cap" />
     </unzip>
 
     <!-- Generate install.xml content -->
@@ -116,9 +116,9 @@
 
     <var name="install.properties"
          value="${line.separator}
-  &lt;copy file=&quot;${package.root}/install/artifacts-social-publishing.properties&quot;${line.separator}
+  &lt;copy file=&quot;${package.root}/install/artifacts-media-publishing.properties&quot;${line.separator}
     todir=&quot;${env.server.home}/sdk&quot; overwrite=&quot;true&quot; /&gt;${line.separator}
-  &lt;copy file=&quot;${package.root}/install/test-artifacts-social-publishing.properties&quot;${line.separator}
+  &lt;copy file=&quot;${package.root}/install/test-artifacts-media-publishing.properties&quot;${line.separator}
     todir=&quot;${env.server.home}/sdk&quot; overwrite=&quot;true&quot; /&gt;" />
 
     <copy file="src/main/resources/install.xml"

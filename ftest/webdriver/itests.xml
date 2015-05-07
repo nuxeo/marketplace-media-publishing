@@ -1,4 +1,4 @@
-<project name="nuxeo-social-publishing-tests"
+<project name="nuxeo-media-publishing-tests"
          xmlns:nx="urn:nuxeo-build"
          xmlns:artifact="urn:nuxeo-artifact">
   <taskdef resource="org/nuxeo/build/antlib.xml" uri="urn:nuxeo-build" />
@@ -17,12 +17,12 @@
 
   <!-- Instruction for installing the MP to be tested -->
   <property name="mp.install"
-            value="file:${out.dir}/marketplace-social-publishing-${maven.project.version}.zip" />
+            value="file:${out.dir}/marketplace-media-publishing-${maven.project.version}.zip" />
   <!-- Override default prepare-environment target to make it download your MP -->
   <target name="prepare-environment"
           depends="_init,prepare-db,prepare-tomcat,prepare-jboss">
     <copy todir="${out.dir}">
-      <artifact:resolveFile key="org.nuxeo.marketplace.social.publishing:marketplace-social-publishing::zip" />
+      <artifact:resolveFile key="org.nuxeo.marketplace.media.publishing:marketplace-media-publishing::zip" />
     </copy>
   </target>
 

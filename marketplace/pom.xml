@@ -2,15 +2,15 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.nuxeo.marketplace.social.publishing</groupId>
+    <groupId>org.nuxeo.marketplace.media.publishing</groupId>
     <artifactId>parent</artifactId>
     <version>1.0-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <artifactId>marketplace-social-publishing</artifactId>
+  <artifactId>marketplace-media-publishing</artifactId>
   <packaging>zip</packaging>
-  <name>Social Publishing Marketplace Package</name>
+  <name>Nuxeo Media Publishing Marketplace Package</name>
 
   <dependencies>
     <dependency>
@@ -19,20 +19,20 @@
       <type>pom</type>
     </dependency>
     <dependency>
-      <groupId>org.nuxeo.ecm.social</groupId>
-      <artifactId>nuxeo-social-publishing-core</artifactId>
+      <groupId>org.nuxeo.ecm.media.publishing</groupId>
+      <artifactId>nuxeo-media-publishing-core</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.nuxeo.ecm.social</groupId>
-      <artifactId>nuxeo-social-publishing-web</artifactId>
+      <groupId>org.nuxeo.ecm.media.publishing</groupId>
+      <artifactId>nuxeo-media-publishing-web</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.nuxeo.ecm.social</groupId>
-      <artifactId>nuxeo-social-publishing-wistia</artifactId>
+      <groupId>org.nuxeo.ecm.media.publishing</groupId>
+      <artifactId>nuxeo-media-publishing-wistia</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.nuxeo.ecm.social</groupId>
-      <artifactId>nuxeo-social-publishing-youtube</artifactId>
+      <groupId>org.nuxeo.ecm.media.publishing</groupId>
+      <artifactId>nuxeo-media-publishing-youtube</artifactId>
     </dependency>
   </dependencies>
 

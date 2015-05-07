@@ -1,6 +1,6 @@
 <!-- See documentation at http://doc.nuxeo.com/x/HgIz -->
-<package type="addon" name="nuxeo-socialpublishing" version="@VERSION@">
-  <title>Nuxeo Social Media Publishing</title>
+<package type="addon" name="nuxeo-mediapublishing" version="@VERSION@">
+  <title>Nuxeo Media Publishing</title>
   <description>
     <p>Nuxeo addon for publishing media (only videos for now) to external services.</p>
   </description>
