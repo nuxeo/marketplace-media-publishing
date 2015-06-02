@@ -17,6 +17,9 @@
   <!-- <production-state>proto</production-state> -->
   <production-state>testing</production-state>
   <!-- <production-state>production_ready</production-state> -->
+  <dependencies>
+    <package>nuxeo-dam:@VERSION@</package>
+  </dependencies>
   <supported>false</supported>
   <platforms>
     <platform>cap-@DISTRIB_VERSION@</platform>
