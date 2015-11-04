@@ -18,7 +18,7 @@
   <production-state>testing</production-state>
   <!-- <production-state>production_ready</production-state> -->
   <dependencies>
-    <package>nuxeo-dam:@VERSION@</package>
+    <package>nuxeo-dam</package>
   </dependencies>
   <supported>false</supported>
   <platforms>
