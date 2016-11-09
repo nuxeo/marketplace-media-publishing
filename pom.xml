@@ -12,6 +12,10 @@
   <name>Nuxeo Media Publishing Marketplace package</name>
   <version>1.2.4-SNAPSHOT</version>
 
+  <properties>
+    <nuxeo.dam.nxr.version>6.2.3-SNAPSHOT</nuxeo.dam.nxr.version>
+  </properties>
+
   <modules>
     <module>marketplace</module>
     <module>ftest/webdriver</module>
@@ -23,6 +27,13 @@
         <groupId>org.nuxeo.marketplace.media.publishing</groupId>
         <artifactId>marketplace-media-publishing</artifactId>
         <version>${project.version}</version>
+        <type>zip</type>
+      </dependency>
+      <dependency>
+        <groupId>org.nuxeo.marketplace.dam</groupId>
+        <artifactId>marketplace</artifactId>
+        <classifier>nxr</classifier>
+        <version>${nuxeo.dam.nxr.version}</version>
         <type>zip</type>
       </dependency>
     </dependencies>
