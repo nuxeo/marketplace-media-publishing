@@ -13,7 +13,7 @@
   <version>1.2.4-SNAPSHOT</version>
 
   <properties>
-    <nuxeo.dam.nxr.version>6.2.3-SNAPSHOT</nuxeo.dam.nxr.version>
+    <marketplace.dam.version>6.2.3-SNAPSHOT</marketplace.dam.version>
   </properties>
 
   <modules>
@@ -33,7 +33,13 @@
         <groupId>org.nuxeo.marketplace.dam</groupId>
         <artifactId>marketplace</artifactId>
         <classifier>nxr-jsf</classifier>
-        <version>${nuxeo.dam.nxr.version}</version>
+        <version>${marketplace.dam.version}</version>
+        <type>zip</type>
+      </dependency>
+      <dependency>
+        <groupId>org.nuxeo.marketplace.dam</groupId>
+        <artifactId>marketplace</artifactId>
+        <version>${marketplace.dam.version}</version>
         <type>zip</type>
       </dependency>
     </dependencies>
