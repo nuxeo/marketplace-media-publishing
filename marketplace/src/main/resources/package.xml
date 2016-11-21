@@ -2,7 +2,7 @@
 <package type="addon" name="nuxeo-mediapublishing" version="@VERSION@">
   <title>Nuxeo Media Publishing</title>
   <description>
-    <p>Nuxeo addon for publishing media (only videos for now) to external services.</p>
+    <p>The Nuxeo Media Publishing addon enables users to publish video documents stored in the Nuxeo repository to external video hosting websites, without leaving the Nuxeo Platform UI. Implementations are provided for Youtube and Wistia and the addon is extensible.</p>
   </description>
   <home-page>http://doc.nuxeo.com/</home-page>
   <vendor>Nuxeo</vendor>
