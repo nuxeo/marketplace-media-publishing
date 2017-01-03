@@ -38,15 +38,23 @@
     </dependency>
     <dependency>
       <groupId>org.nuxeo.ecm.media.publishing</groupId>
-      <artifactId>nuxeo-media-publishing-web</artifactId>
+      <artifactId>nuxeo-media-publishing-jsf</artifactId>
     </dependency>
     <dependency>
       <groupId>org.nuxeo.ecm.media.publishing</groupId>
-      <artifactId>nuxeo-media-publishing-wistia</artifactId>
+      <artifactId>nuxeo-media-publishing-wistia-core</artifactId>
     </dependency>
     <dependency>
       <groupId>org.nuxeo.ecm.media.publishing</groupId>
-      <artifactId>nuxeo-media-publishing-youtube</artifactId>
+      <artifactId>nuxeo-media-publishing-youtube-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.nuxeo.ecm.media.publishing</groupId>
+      <artifactId>nuxeo-media-publishing-wistia-jsf</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.nuxeo.ecm.media.publishing</groupId>
+      <artifactId>nuxeo-media-publishing-youtube-jsf</artifactId>
     </dependency>
   </dependencies>
 
